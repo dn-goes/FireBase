@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:todo_list_firebase/firebase_options.dart';
 import 'package:todo_list_firebase/views/auth_view.dart';
 
-void main() async{
+void main() async{ 
   WidgetsFlutterBinding.ensureInitialized();  //garante que o Flutter esteja totalmente inicializado
   //conectar com o Firebase
   await Firebase.initializeApp(
