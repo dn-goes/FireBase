@@ -62,7 +62,9 @@ Construindo um aplicativo do Zero - O CineFavorite permitirá criar uma conta e 
         +read()
     }
 
-    User "1"--"1+" Movies : " selcionar a "
+    User "1"--"1+" Movies : " selcionar"
+
+```
 
 classDiagram
 
