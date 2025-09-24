@@ -1,51 +1,50 @@
 # CineFavorite - Formativa
-Construindo um aplicativo do Zero - O CineFavorite permitirá criar uma conta e buscar filme em uma API e montar uma galeria pessoal de filmes favoritos com capas e notas.
+Construindo um aplicativo do Zero - O CineFavorite permitirá criar uma conta e buscar filmes em uma api e montar uma galeria pessoal de filmes favoritos, com capas e notas.
 
 ## Objetivos
-- Intregar o Aplicativo a uma API
-- Criar uam conta pessoal no FireBase
-- Armazenar informações para Cada usuarios das preferencias solicitadas
-- Consultar informações de Filmes (Capas, Titulo)
+- Integrar o Aplicativo a uam API
+- Criar uma conta pessoal no FireBase
+- Armazenar informações para Cada usuários das preferencias solicitadas
+- consultar informações de Filmes (Capas, Título)
 
-## Levantamento de requisitos 
+## Levantamentos de Requisitos
 
 - Funcionais
-    - Criar conta
 
+- Não Funcionais
 
-- Nao funcionais 
-    - Armazenar uma conta da Api no FireBase
+## Diagramas
 
-## Diagramas do projeto
-    diagrama que demonstra as entidades da aplicação
+1. ### Diagrama de Classe
+    Diagrama de que demonstra as entidades da aplicação
 
-    - usuario (user) : classe criada pelo FireBase
+    - usuário (user) : classe criada pelo FireBase
         - email
         - senha
         - id
-        - Create()
+        - create()
         - login()
-        - Logout()
+        - logout()
 
     - Filme (Movie) : Classe modelada pelo dev
         - number id:
         - String titulo:
-        - String PosterPath:
-        - bollean favorito:
-        - double Nota:
+        - String PosterPath
+        - boolean favorito
+        - double Nota
         - adicionar()
         - update()
         - remover()
         - listarFavoritos()
 
-
 ```mermaid
 
+classDiagram
     class User{
-        +String uid:
-        +String Email:
-        +String password:
-        +CreateUSer()
+        +String uid
+        +String email
+        +String password
+        +createUser()
         +login()
         +logout()
     }
@@ -53,21 +52,26 @@ Construindo um aplicativo do Zero - O CineFavorite permitirá criar uma conta e 
     class Movie{
         +String id
         +String title
-        +String PosterPath
+        +String posterPath
         +Boolean Favorite
         +double Rating
-        +adicionarFavorito()
+        +addFavorite()
         +removeFavorite()
-        +updateReating()
+        +updateRating()
         +read()
-    }
+    } 
 
-    User "1"--"1+" Movies : " selcionar"
+    User "1"--"1+" Movie : "selecionar"
 
 ```
 
-classDiagram
+2. ### Diagram de Uso
 
-## Prototipagem 
+3. ### Diagrama de Fluxo
+
+## Prototipagem
+
+- https://www.figma.com/design/Nb7dpzHvkBwCNVdioOhB2w/Untitled?node-id=0-1&t=n97O30aGRmvWRHD7-1
+
 
 ## Codificação
